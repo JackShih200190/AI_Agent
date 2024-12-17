@@ -7,11 +7,11 @@ AI Agent 的核心功能包括:
 ![image](https://github.com/user-attachments/assets/b05dfff3-b7f2-4df1-8ac9-e4025c41a8a0)
 
 ## 5 Types of Agent
-1. Simple Reflex Agents(基本反應型代理)
-2. Model-Based Agents(基於模型的反設型代理)
-3. Goal-Based Agents(目標導向型代理)
-4. Utility-Based Agents(效率型代理)
-5. Learning Agents(學習型代理)
+1. Simple Reflex Agents--(基本反應型代理)
+2. Model-Based Agents----(基於模型的反設型代理)
+3. Goal-Based Agents-----(目標導向型代理)
+4. Utility-Based Agents--(效率型代理)
+5. Learning Agents-------(學習型代理)
    
 ## Workflow 
 你可以有一個約時間的AI、一個確認時間的AI、一個寫訪綱的AI⋯⋯.，這個工作流程被稱為代理工作流程（Agentic Workflow），重點在於上述提到的：計畫與記憶能夠修正、使用的工具與行動能夠調整。
