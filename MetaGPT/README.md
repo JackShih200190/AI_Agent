@@ -7,6 +7,10 @@
 ```
 pip install metagpt
 ```
+
+> [!WARNING]
+> Python 3.12版本會有套件錯誤，安裝時建議使用>=3.9 <3.12版本
+
 ## install submodules 
 - RAG
 - OCR
