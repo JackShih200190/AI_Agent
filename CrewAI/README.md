@@ -2,6 +2,12 @@
 ### 三項必須做到事項
 定義Agent、定義Task、建立crew
 
+## 套件安裝
+
+```python
+pip install crewai
+```
+
 ## Agent 
 設定 Agent 腳色的角色定義和背景，並給與每一個Agent都有自己的目標需要去完成
 Agent Attributes 常見幾個參數
