@@ -15,6 +15,9 @@ pip install metagpt
 > httpx套件版本問題導致TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
 > https://github.com/geekan/MetaGPT/issues/1617
 
+![image](https://github.com/user-attachments/assets/fa69526f-978e-4621-8899-20c71bcb5871)
+
+
 ## Install submodules 
 - RAG
 - OCR
