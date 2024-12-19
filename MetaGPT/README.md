@@ -11,6 +11,10 @@ pip install metagpt
 > [!WARNING]
 > Python 3.12版本會有套件錯誤，安裝時建議使用>=3.9 <3.12版本
 
+> [!WARNING]
+> httpx套件版本問題導致TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxies'
+> https://github.com/geekan/MetaGPT/issues/1617
+
 ## Install submodules 
 - RAG
 - OCR
