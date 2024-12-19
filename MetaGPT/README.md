@@ -11,7 +11,7 @@ pip install metagpt
 > [!WARNING]
 > Python 3.12版本會有套件錯誤，安裝時建議使用>=3.9 <3.12版本
 
-## install submodules 
+## Install submodules 
 - RAG
 - OCR
 - search-ddg
@@ -19,4 +19,10 @@ pip install metagpt
 - selenium
 ```
 pip install 'metagpt[submodules_name]'
+```
+
+## Env setup
+初始化設定，將會產生一個yaml檔來設定大語言模型
+```cmd
+metagpt --init-config
 ```
