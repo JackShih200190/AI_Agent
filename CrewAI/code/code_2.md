@@ -1,17 +1,21 @@
 ## CrewAI
 
 ```python
-import os
+import agentops
 from crewai import Agent, Task, Crew, Process
-from crewai_tools import PDFSearchTool
+from crewai_tools import PDFSearchTool,SerperDevTool
 from langchain_openai import ChatOpenAI
-from dotenv import load_dotenv
-load_dotenv()
 
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-# 設定PDF工具
+# 啟動監控畫面
+agentops.init(skip_auto_end_session=True)
+# 設定工具
 tool = PDFSearchTool(pdf = './doc/LLMAll_en-US_FINAL.pdf')
+SearchTool = SerperDevTool(    
+    country="TW",
+    locale="zh-tw",
+    location="Pingtung City, Pingtung County, Taiwan",
+    n_results=5,
+)
 
 # 定義Agent
 researcher = Agent(
@@ -20,14 +24,14 @@ researcher = Agent(
     backstory='你是一位生成式AI的研究人員，並且有多個訓練大語言模型的經驗，時常解決關大語言模型相關的漏洞',
     cache=True,
     verbose=False,
+    tools=[SearchTool,tool],
     allow_delegation=False,
     max_rpm=30,
     max_iter=5
 )
 # 定義任務
 task1 = Task(
-    description='對OWASP TOP10 for 大語言模型(LLM)深入分析，並使用繁體中文來撰寫報告',
-    tools=[tool],
+    description='針對對2025年大語言模型(LLM)十大漏洞深入分析，並使用繁體中文來撰寫報告',
     agent=researcher,
     expected_output="大語言模型(LLM)的安全分析報告"
 )
@@ -45,11 +49,13 @@ crew = Crew(
     verbose=True,
     memory=True,
     manager_llm=ChatOpenAI(model_name="gpt-4o"),
+    manager_agent=manager,
     process=Process.hierarchical,
 )
 
 result = crew.kickoff()
 print(result)
+
 ```
 ### Output
 PS E:\AI_Agent\crewai> python .\crewai_pdftools.py
