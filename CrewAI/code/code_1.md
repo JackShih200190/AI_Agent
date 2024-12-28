@@ -41,6 +41,7 @@ class WebvulnFlow(Flow):
         vuln_description = response["choices"][0]["message"]["content"]
         return vuln_description
 
+# 將整個Flow啟動來工作
 flow = WebvulnFlow()
 result = flow.kickoff()
 
