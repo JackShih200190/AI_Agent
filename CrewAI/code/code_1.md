@@ -8,6 +8,7 @@ from litellm import completion
 class WebvulnFlow(Flow):
     model = "gpt-4o-mini"
 
+    # 啟動Flow 需使用@start()來啟動
     @start()
     def generate_web_vuln(self):
         print("Starting flow")
@@ -24,7 +25,7 @@ class WebvulnFlow(Flow):
         print(f"Random web_vuln: {web_vuln}")
 
         return web_vuln
-
+    # 監聽上一個任務完成的return來啟動下一個流程
     @listen(generate_web_vuln)
     def generate_vuln_description(self, web_vuln):
         response = completion(
