@@ -1,7 +1,7 @@
----------- user ----------
-Plan a 3 day trip to Nepal.
----------- planner_agent ----------
-Planning a 3-day trip to Nepal can be an exciting and enriching experience, given its rich cultural heritage, breathtaking landscapes, and warm people. Here’s a suggested itinerary:
+---------- user ----------<Br>
+Plan a 3 day trip to Nepal.<Br>
+---------- planner_agent ----------<Br>
+Planning a 3-day trip to Nepal can be an exciting and enriching experience, given its rich cultural heritage, breathtaking landscapes, and warm people. Here’s a suggested itinerary:<Br>
 
 ### Day 1: Arrival in Kathmandu
 
