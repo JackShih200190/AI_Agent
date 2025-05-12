@@ -9,7 +9,7 @@
 
 可以讓LLM使用到之前的內容來增加回答的精準度
 
-## 將歷史對話直接儲存成Memory
-### ConversationBufferMemory
-### ConversationBufferWindowMemory
-### ConversationTokenBufferMemory
+## 將歷史對話直接儲存成Memory (皆停止支援)
+~~### ConversationBufferMemory~~
+~~### ConversationBufferWindowMemory~~
+~~### ConversationTokenBufferMemory~~
