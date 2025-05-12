@@ -7,4 +7,9 @@
   檢索系統。它不僅能基於電腦記憶體，還可以基於向量資料庫，根據語
   義相關度找到與輸入最相關的資訊．即使這些資訊在字面上並非完全匹配。
 
-可以讓LLM使用到之前的內容來增加回大的精準度
+可以讓LLM使用到之前的內容來增加回答的精準度
+
+## 將歷史對話直接儲存成Memory
+### ConversationBufferMemory
+### ConversationBufferWindowMemory
+### ConversationTokenBufferMemory
